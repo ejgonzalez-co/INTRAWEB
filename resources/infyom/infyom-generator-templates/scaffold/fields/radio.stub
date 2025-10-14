@@ -1,8 +1,0 @@
-    <div class="radio radio-css radio-inline">
-        {!! Form::radio('$FIELD_NAME$', "$VALUE$", null) !!}
-        <label for="$FIELD_NAME$">$LABEL$</label>
-        <small>@lang('Select the') @{{ `@lang('$FIELD_NAME_TITLE$')` | lowercase }}</small>
-        <div class="invalid-feedback" v-if="dataErrors.$FIELD_NAME$">
-            <p class="m-b-0" v-for="error in dataErrors.$FIELD_NAME$">@{{ error }}</p>
-        </div>
-    </div>
