@@ -1,0 +1,11 @@
+{
+    "name": "Workhistories",
+    "alias": "workhistories",
+    "description": "Modulo de Historias Laborales",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Workhistories\\Providers\\WorkhistoriesServiceProvider"
+    ],
+    "files": []
+}

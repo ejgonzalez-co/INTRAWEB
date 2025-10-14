@@ -1,0 +1,11 @@
+{
+    "name": "ExpedientesElectronicos",
+    "alias": "expedienteselectronicos",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\ExpedientesElectronicos\\Providers\\ExpedientesElectronicosServiceProvider"
+    ],
+    "files": []
+}

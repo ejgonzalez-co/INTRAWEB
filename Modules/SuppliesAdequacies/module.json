@@ -1,0 +1,11 @@
+{
+    "name": "SuppliesAdequacies",
+    "alias": "suppliesadequacies",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\SuppliesAdequacies\\Providers\\SuppliesAdequaciesServiceProvider"
+    ],
+    "files": []
+}

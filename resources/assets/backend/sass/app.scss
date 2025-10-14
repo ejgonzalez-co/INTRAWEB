@@ -1,0 +1,17 @@
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+
+@import "dashboard";
+
+// Toastr
+@import "~toastr/toastr.scss";
+
+// Sweetalert2
+@import '~sweetalert2/src/sweetalert2';
+
+// Fortawesome 5.8.1
+@import '~@fortawesome/fontawesome-free/scss/brands';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';

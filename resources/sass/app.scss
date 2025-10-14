@@ -1,0 +1,1001 @@
+/*// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+*/
+
+@import "toastr";
+
+$button-status-opacity: 20;
+$button-color-status-pending: #d75301;
+$button-color-status-assigned-correspondence: #2196f3;
+$button-color-status-in-review-correspondence: #ffc107;
+$button-color-status-pending_approval: #5c0eb6;
+$button-color-status-approved-correspondence: #00bcd4;
+$button-color-status-cancelled: #b90d0d;
+$button-color-status-inSale: #1D4E99;
+
+%button__status-correspondence{
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.button__status-inSale{
+    @extend %button__status-correspondence;
+    color: $button-color-status-inSale;
+    border: 1px solid $button-color-status-inSale;
+    background-color: #{$button-color-status-inSale}#{$button-status-opacity};
+}
+
+.button__status-pending-correspondence{
+    @extend %button__status-correspondence;
+    color: $button-color-status-pending;
+    border: 1px solid $button-color-status-pending;
+    background-color: #{$button-color-status-pending}#{$button-status-opacity};
+}
+
+.button__status-assigned-correspondence{
+    @extend %button__status-correspondence;
+    color: $button-color-status-assigned-correspondence;
+    border: 1px solid $button-color-status-assigned-correspondence;
+    background-color: #{$button-color-status-assigned-correspondence}#{$button-status-opacity};
+}
+
+.button__status-in_review-correspondence{
+    @extend %button__status-correspondence;
+    color: $button-color-status-in-review-correspondence;
+    border: 1px solid $button-color-status-in-review-correspondence;
+    background-color: #{$button-color-status-in-review-correspondence}#{$button-status-opacity};
+}
+
+.button__status-pending_approval{
+    @extend %button__status-correspondence;
+    color: $button-color-status-pending_approval;
+    border: 1px solid $button-color-status-pending_approval;
+    background-color: #{$button-color-status-pending_approval}#{$button-status-opacity};
+}
+
+.button__status-approved-correspondence{
+    @extend %button__status-correspondence;
+    color: $button-color-status-approved-correspondence;
+    border: 1px solid $button-color-status-approved-correspondence;
+    background-color: #{$button-color-status-approved-correspondence}#{$button-status-opacity};
+}
+
+.button__status-cancelled-correspondence{
+    @extend %button__status-correspondence;
+    color: $button-color-status-cancelled;
+    border: 1px solid $button-color-status-cancelled;
+    background-color: #{$button-color-status-cancelled}#{$button-status-opacity};
+}
+
+/* Skeleton loader styles */
+.skeleton {
+  background: linear-gradient(90deg, #e0e0e0 25%, #f5f5f5 50%, #e0e0e0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite linear;
+  height: 20px;
+  border-radius: 4px;
+}
+
+.skeleton-text-area {
+    height:40px;
+    width: 80%;
+    margin-bottom: 8px;
+}
+
+
+.skeleton-title {
+    height: 24px;
+    width: 40%;
+    margin-bottom: 10px;
+}
+
+.skeleton-input {
+    height: 32px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+@keyframes loading {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}
+
+
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.no-hover:hover {
+    color: inherit;
+    background: inherit;
+}
+.pagination {
+    display: inline-flex;
+}
+// Color de menu lateral activo
+.sidebar .nav>li.active>a {
+    position: relative;
+    z-index: 10;
+    background-color: transparent;
+    // color: #fff;
+    border-left: 4px solid rgb(33, 150, 243);
+    color: rgb(33, 150, 243) !important;
+    // background: #2196f3;
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color de fondo */
+}
+.sidebar .nav > li.active,
+.sidebar .nav > li.active * {
+  color: rgb(33, 150, 243) !important;
+}
+.page-with-light-sidebar .sidebar .nav>li:not(.nav-header):hover {
+  color: #212121;
+  background-color: #f0f0f0;
+}
+
+label.required:after {
+    color: #cc0000;
+    content: "*";
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.bg-nav {
+    background-color: #101d47  !important
+}
+
+.widget-stats .stats-info h4, .widget.widget-stats .stats-info h4 {
+    font-size: 13px !important;
+}
+
+.fix-vertical-table {
+    display:block;
+    max-height:500px !important;
+    overflow-y:auto !important;
+}
+
+
+.rounded-25 {
+    border-radius: 25px!important;
+}
+
+.profile-header .profile-header-cover:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom,rgba(0,0,0,0) 0,#101d47 100%) !important;
+}
+
+.preview {
+    border: dashed 1px rgba(255,255,255, 0.25);
+    background-color: #fff !important;
+}
+
+
+.navbar-brand {
+    white-space: normal !important;
+}
+
+.page-with-light-sidebar.page-sidebar-minified .sidebar .nav>li.active>a {
+    // background: #2196f3;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] { -moz-appearance:textfield; }
+
+.widget-card-cover {
+    background-size: 6rem !important;
+}
+
+
+.sidebar .nav>li.nav-profile .image {
+    width: 110px;
+    height: 110px;
+    // padding: 10px;
+    border-radius: unset;
+
+}
+
+.table-component__th--sort-asc:after {
+    content: "\2191";
+  }
+
+  .table-component__th--sort-desc:after {
+    content: "\2193";
+  }
+
+$button-status-opacity: 20;
+$button-color-status-pending: #d75301;
+$button-color-status-assigned: #baa625;
+$button-color-status-in-review: #003863;
+$button-color-status-pending_approval: #5c0eb6;
+$button-color-status-approved: #036a2c;
+$button-color-status-cancelled: #b90d0d;
+
+%button__status{
+    text-align: center;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.button__status-pending{
+    @extend %button__status;
+    color: $button-color-status-pending;
+    border: 1px solid $button-color-status-pending;
+    background-color: #{$button-color-status-pending}#{$button-status-opacity};
+}
+
+.button__status-assigned{
+    @extend %button__status;
+    color: $button-color-status-assigned;
+    border: 1px solid $button-color-status-assigned;
+    background-color: #{$button-color-status-pending}#{$button-status-opacity};
+}
+
+.button__status-in_review{
+    @extend %button__status;
+    color: $button-color-status-in-review;
+    border: 1px solid $button-color-status-in-review;
+    background-color: #{$button-color-status-in-review}#{$button-status-opacity};
+}
+
+.button__status-pending_approval{
+    @extend %button__status;
+    color: $button-color-status-pending_approval;
+    border: 1px solid $button-color-status-pending_approval;
+    background-color: #{$button-color-status-pending_approval}#{$button-status-opacity};
+}
+
+.button__status-approved{
+    @extend %button__status;
+    color: $button-color-status-approved;
+    border: 1px solid $button-color-status-approved;
+    background-color: #{$button-color-status-approved}#{$button-status-opacity};
+}
+
+.button__status-cancelled{
+    @extend %button__status;
+    color: $button-color-status-cancelled;
+    border: 1px solid $button-color-status-cancelled;
+    background-color: #{$button-color-status-cancelled}#{$button-status-opacity};
+}
+
+  /*===== Vertical Timeline =====*/
+  #conference-timeline {
+    position: relative;
+    max-width: 920px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  #conference-timeline .timeline-start,
+  #conference-timeline .timeline-end {
+    position: relative;
+    display: table-cell;
+    z-index: 10;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+    background: #00B0BD;
+    padding: 15px 23px;
+    color: #fff;
+    max-width: 5%;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  #conference-timeline .conference-center-line {
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    margin-left: -2px;
+    background: #00B0BD;
+    // z-index: -1;
+  }
+  #conference-timeline .conference-timeline-content {
+    padding-top: 67px;
+    padding-bottom: 67px;
+  }
+  .timeline-article {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    margin: 20px 0;
+  }
+  .timeline-article .content-left-container,
+  .timeline-article .content-right-container {
+    max-width: 44%;
+    width: 100%;
+  }
+  .timeline-article .timeline-author {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #242424;
+  }
+  .timeline-article .content-left,
+  .timeline-article .content-right {
+    position: relative;
+    width: auto;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,.03);
+    padding: 27px 25px;
+    border-radius: 4px;
+    // box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3);
+  }
+  .timeline-article p {
+    // margin: 0 0 0 60px;
+    padding: 0;
+    // font-weight: 400;
+    color: #242424;
+    font-size: 14px;
+    line-height: 24px;
+    position: relative;
+  }
+  .timeline-article p span.article-number {
+    position: absolute;
+    font-weight: 300;
+    font-size: 44px;
+    top: 10px;
+    left: -60px;
+    color: #00B0BD;
+  }
+  .timeline-article .content-left-container {
+    float: left;
+  }
+  .timeline-article .content-right-container {
+    float: right;
+  }
+  .timeline-article .content-left:before,
+  .timeline-article .content-right:before{
+    position: absolute;
+    top: 20px;
+    font-size: 23px;
+    font-family: "FontAwesome";
+    color: #fff;
+  }
+  .timeline-article .content-left:before {
+    content: "\f0da";
+    right: -8px;
+  }
+  .timeline-article .content-right:before {
+    content: "\f0d9";
+    left: -8px;
+  }
+  .timeline-article .meta-date {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 62px;
+    height: 62px;
+    margin-left: -31px;
+    color: #fff;
+    border-radius: 100%;
+    background: #00B0BD;
+  }
+  .timeline-article .meta-date .date,
+  .timeline-article .meta-date .month {
+    display: block;
+    text-align: center;
+    font-weight: 900;
+  }
+  .timeline-article .meta-date .date {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .timeline-article .meta-date .month {
+    font-size: 18px;
+    line-height: 10px;
+  }
+  /*===== // Vertical Timeline =====*/
+
+  /*===== Resonsive Vertical Timeline =====*/
+  @media only screen and (max-width: 830px) {
+
+    #buscador_global{
+      display: none;
+    }
+    #nav_ayudas{
+      margin: auto; margin-right: 0;
+    }
+    #conference-timeline .timeline-start,
+    #conference-timeline .timeline-end {
+      margin: 0;
+    }
+    #conference-timeline .conference-center-line {
+      margin-left: 0;
+      left: 50px;
+    }
+    .timeline-article .meta-date {
+      margin-left: 0;
+      left: 20px;
+    }
+    .timeline-article .content-left-container,
+    .timeline-article .content-right-container {
+      max-width: 100%;
+      width: auto;
+      float: none;
+      margin-left: 110px;
+      min-height: 53px;
+    }
+    .timeline-article .content-left-container {
+      margin-bottom: 20px;
+    }
+    .timeline-article .content-left,
+    .timeline-article .content-right {
+      padding: 10px 25px;
+      min-height: 65px;
+    }
+    .timeline-article .content-left:before {
+      content: "\f0d9";
+      right: auto;
+      left: -8px;
+    }
+    .timeline-article .content-right:before {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    .timeline-article p {
+      margin: 0;
+    }
+    .timeline-article p span.article-number {
+      display: none;
+    }
+
+  }
+  /*===== // Resonsive Vertical Timeline =====*/
+
+
+
+  //inicio de seccion de anotaciones
+
+  /* Estilos base */
+section#timeline {
+  width: 80%;
+  margin: 20px auto;
+  position: relative;
+}
+
+section#timeline:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin: 0 0 0 -1px;
+  width: 2px;
+  height: 100%;
+  background: #00b0bd;
+}
+
+section#timeline article {
+  width: 100%;
+  margin: 0 0 20px 0;
+  position: relative;
+}
+
+section#timeline article:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+section#timeline article div.inner {
+  width: 40%;
+  float: left;
+  margin: 5px 0 0 0;
+  border-radius: 6px;
+}
+
+section#timeline article div.inner span.date {
+  display: block;
+  width: 60px;
+  height: 60px;
+  padding: 5px 0;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin: 0 0 0 -32px;
+  border-radius: 100%;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+  background: #00b0bd;
+  color: white;
+  box-shadow: 0 0 0 7px #00b0bd;
+}
+
+section#timeline article div.inner span.date span {
+  display: block;
+  text-align: center;
+}
+
+section#timeline article div.inner span.date span.day {
+  font-size: 10px;
+}
+
+section#timeline article div.inner span.date span.month {
+  font-size: 18px;
+}
+
+section#timeline article div.inner span.date span.year {
+  font-size: 10px;
+}
+
+section#timeline article div.inner h2 {
+  padding: 15px;
+  margin: 0;
+  color: #fff;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  border-radius: 6px 6px 0 0;
+  position: relative;
+}
+
+section#timeline article div.inner h2:after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  right: -5px;
+  width: 10px;
+  height: 10px;
+  transform: rotate(-45deg); /* Actualizado a transform */
+}
+
+section#timeline article div.inner p {
+  padding: 15px;
+  margin: 0;
+  font-size: 14px;
+  background: #fff;
+  color: #656565;
+  border-radius: 0 0 6px 6px;
+  border: solid 1px grey;
+}
+
+section#timeline article:nth-child(2n+2) div.inner {
+  float: right;
+}
+
+section#timeline article:nth-child(2n+2) div.inner h2:after {
+  left: -5px;
+}
+
+section#timeline article div.inner h2 {
+  background: #00b0bd;
+}
+
+section#timeline article div.inner h2:after {
+  background: #00b0bd;
+}
+
+/* Media queries para ajustar el diseño en pantallas más pequeñas */
+@media only screen and (max-width: 768px) {
+  section#timeline article div.inner {
+    width: 100%; /* Cambiado a ancho completo en pantallas pequeñas */
+    float: none; /* Quitado el flotado */
+  }
+
+  section#timeline article:nth-child(2n+2) div.inner {
+    float: none; /* Quitado el flotado */
+  }
+}
+.rounded-image-container {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+
+  //fin de seccion de anotaciones
+
+//******* Estilos para los listados con buscador integrado *******
+.vs--open .vs__dropdown-toggle {
+  box-shadow: 0 0 0 3px hsla(199, 90%, 73%, 0.46);
+  border-color: rgb(114, 157, 238) !important;
+  border-radius: 3px !important;
+}
+// Estilos para la lista de opciones
+.vs__dropdown-menu {
+  border-radius: 4px !important;
+  margin-top: 1.5px !important;
+}
+
+.vs__open-indicator {
+  cursor: auto !important;
+}
+
+
+//******* Fin estilos para los listados con buscador integrado *******
+
+// Estilos para menú de navegación desplegable
+.menuNavDesplegable {
+  padding-left: 35px;
+}
+
+.menuNavDesplegable li a {
+  padding-left: 5px;
+}
+
+.menuNavDesplegable li a i {
+  font-size: 22px;
+}
+
+.menuNavDesplegable li a span {
+  font-size: 0.8025rem;
+}
+
+.fa-chevron-down, .fa-chevron-up {
+  cursor: pointer;
+}
+//******* Fin estilos para de navegación desplegable *******
+
+.vs__spinner {
+  border-left-color: rgba(88, 151, 251, 0.71) !important;
+  font-size: 4px !important;
+}
+
+.form-control:disabled, .form-control[readonly] {
+  background-color: #69696938 !important;
+}
+
+.panel .panel-heading .panel-title {
+  font-size: 14px;
+}
+
+
+.registrosPendientes {
+  background-color: green;
+  width: 10px;
+  height: 10px;
+  float: right;
+  border-radius: 10px;
+}
+
+.btnSearchUniversal {
+  background-color: #fff;
+  height: 32px;
+  margin: auto;
+}
+
+.contenedorFormFuncionarioObs {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.contenedorFormelaboracion {
+  // background-color: #008eff5e;
+  border: 1px solid #2196f3;
+}
+
+.contenedorFormrevision {
+  // background-color: #f7de0042;
+  border: 1px solid #efd700;
+}
+
+.contenedorFormaprobacion {
+  // background-color: #01e2ff40;
+  border: 1px solid #00bcd4;
+}
+
+.contenedorFormfirmar_varios {
+  // background-color: #ff980078;
+  border: 1px solid #ff9800;
+}
+
+.selected .arrow-down {
+  display: block !important;
+}
+
+.selected .elaboracion {
+  border-top-color: #2196f3;
+}
+
+.selected .revision {
+  border-top-color: #efd700;
+}
+
+.selected .aprobacion {
+  border-top-color: #00bcd4;
+}
+
+.selected .firmar_varios {
+  border-top-color: #ff9800;
+}
+
+.selected .publicacion {
+  border-top-color: #8bc34a;
+}
+
+.arrow-down {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #007bff; /* Color de la flecha */
+}
+
+.templateTD {
+    transition: transform 0.5s ease;
+}
+
+.containerTD .card {
+    width: 140px;
+    height: 180px;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.containerTD .card-text {
+    font-weight: 500;
+    margin-top: 10px;
+    margin-left: 3px;
+    margin-right: 3px;
+    width: 140px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.containerTD .card:hover {
+    // transform: translateY(-5px);
+    // box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+    border: 0.1px solid #679FFF;
+}
+
+.containerTD {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+    margin-left: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    max-width: fit-content;
+    overflow: hidden; /* Escondemos el contenido que sobrepase la altura inicial */
+    transition: max-height 0.3s ease; /* Transición suave */
+    max-height: 231px;
+}
+
+.containterTiposDocumentosExpanded {
+    flex-wrap: wrap !important;
+    overflow: auto !important;
+    max-height: 450px;
+}
+
+// Estilo de la clase miniatura de la vista de ayudas, para la presentación de la vista previa de la ayuda
+.miniatura {
+    width: 320px;
+    height: 180px;
+    border-radius: 12px;
+    transition: all .3s ease;
+}
+
+.miniatura:hover {
+    border-radius: 0px !important;
+}
+
+.page-rotule{
+  width:28cm; height:35cm; position:relative; border:#000 solid 1px;  background-repeat:repeat;
+}
+
+.page-rotule-show{
+  width:29.3cm; height:35cm; position:relative; border:#000 solid 1px;  background-repeat:repeat;
+}
+
+.profile-image-container {
+  max-width: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.loading-indicator {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.contenidotext img {
+  max-width: 70%; /* La imagen no se saldrá del contenedor */
+  height: auto;   /* Mantener la relación de aspecto */
+}
+
+// Estilo para los ítems de las listas desplegables del componente AutoComplete
+.vs__dropdown-option--highlight {
+    background: var(--vs-dropdown-option--active-bg) !important;
+    color: var(--vs-dropdown-option--active-color) !important;
+}
+
+.zindex{
+  z-index:1000;
+}
+
+
+/* Estilos cuando se hace clic en el enlace */
+.btn-recargar-listado:active {
+    background-color: green !important; /* Color al hacer clic */
+}
+
+/*
+ * El siguiente estilo es aplicable a la barra y spinner de progreso cuando se ejecuta una petición
+ * .pace-progress = Barra de progreso en la parte superior de la pantalla
+ * .pace-activity = Spinner de cargando
+ */
+.pace-progress
+// .pace-activity
+{
+    display: none !important;
+}
+
+.column-adjunto{
+
+  min-width: 200px;
+
+}
+
+.column-100{
+
+  min-width: 100px;
+
+}
+
+
+.modal-completo {
+  max-width: 80vw;
+}
+.table-container {
+  position: relative; /* Asegúrate de que los elementos dentro de .table-container puedan ser correctamente posicionados */
+}
+
+.tooltip-trigger {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.tooltip-layer {
+  position: absolute;
+  top: 100%; /* Posiciona debajo del trigger */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  width: 300px; /* Evita que el tooltip sea más grande de lo necesario */
+  background-color: #333;
+  color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  font-size: 12px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+  white-space: normal; /* Permite que el texto se ajuste al ancho del tooltip */
+  word-wrap: break-word; /* Fuerza el ajuste de palabras largas */
+}
+
+.tooltip-trigger {
+  position: relative; /* Mantiene la relación con el tooltip */
+  display: inline-block; /* Asegura que el tooltip solo se active sobre el elemento */
+}
+
+.tooltip-trigger:hover .tooltip-layer {
+  opacity: 1;
+  visibility: visible;
+}
+
+.registro-no-leido {
+  font-weight: bold;
+}
+
+
+.btn-add {
+  background: linear-gradient(45deg, #007bff, #0056b3);
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-add:hover{
+  background: linear-gradient(45deg, #0056b3, #003d80);
+  transform: scale(1.05);
+  color: white;
+}
+.dropdown-item-export{
+  transition: all 0.3s ease-in-out;
+
+}
+.dropdown-item-export:hover {
+  background: linear-gradient(45deg, #0056b3, #003d80) !important;
+  transform: scale(1.05);
+  color: white;}
+
+.custom-thead {
+  background-color: #f0f0f0 !important; /* Fondo gris */
+  color: #333 !important; /* Texto oscuro */
+  font-weight: bold;
+  // text-transform: uppercase;
+}
+
+// Estilo para subir un poco el mensaje de error cuando se intenta adjuntar un archivo muy pesado desde el componente "input-file"
+.dropzone .dz-preview .dz-error-message {
+    top: 68px !important;
+    z-index: 1022;
+}
+
+// Estilo para poner color de borde al "input-file" cuando se haga focus por "required"
+.input-dropzone:focus {
+    border: 1px solid #5cb0ff !important;
+}
+
+.btn-add {
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-add:hover {
+    background: linear-gradient(45deg, #0056b3, #003d80);
+    transform: scale(1.05);
+    color: white;
+}
+
+.dropdown-item-export {
+    transition: all 0.3s ease-in-out;
+}
+
+.dropdown-item-export:hover {
+    background: linear-gradient(45deg, #0056b3, #003d80) !important;
+    transform: scale(1.05);
+    color: white;
+}
+
+.text-wrap {
+    word-wrap: break-word;
+}
+
+// Clase para la presentación de los adjuntos en el componente ViewerAttachment
+.adjunto-viewer {
+    width: 16rem;
+}

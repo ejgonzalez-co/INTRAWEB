@@ -1,0 +1,550 @@
+[
+    {
+        "name": "id",
+        "dbType": "bigInteger,true,true",
+        "htmlType": null,
+        "validations": null,
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "id_cargo",
+        "dbType": "bigInteger,false,true",
+        "htmlType": null,
+        "validations": "nullable",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "id_dependencia",
+        "dbType": "bigInteger,false,true",
+        "htmlType": null,
+        "validations": "nullable",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "name",
+        "dbType": "string,255",
+        "htmlType": "text",
+        "validations": "required|string|max:255",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "email",
+        "dbType": "string,255",
+        "htmlType": "text",
+        "validations": "required|string|max:255",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "email_verified_at",
+        "dbType": "datetime:nullable",
+        "htmlType": "date",
+        "validations": "nullable",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "password",
+        "dbType": "string,255",
+        "htmlType": "text",
+        "validations": "required|string|max:255",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "remember_token",
+        "dbType": "string,100:nullable",
+        "htmlType": "text",
+        "validations": "nullable|string|max:100",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "url_img_profile",
+        "dbType": "string,100:nullable",
+        "htmlType": "text",
+        "validations": "nullable|string|max:100",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "url_digital_signature",
+        "dbType": "string,100:nullable",
+        "htmlType": "text",
+        "validations": "nullable|string|max:100",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "username",
+        "dbType": "string,255:nullable",
+        "htmlType": "text",
+        "validations": "nullable|string|max:255",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "block",
+        "dbType": "boolean:nullable",
+        "htmlType": "checkbox,1",
+        "validations": "nullable|boolean",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "sendEmail",
+        "dbType": "boolean:nullable",
+        "htmlType": "checkbox,1",
+        "validations": "nullable|boolean",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "lastvisitDate",
+        "dbType": "datetime:nullable",
+        "htmlType": "date",
+        "validations": "nullable",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "registerDate",
+        "dbType": "datetime:nullable",
+        "htmlType": "date",
+        "validations": "nullable",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "lastResetTime",
+        "dbType": "datetime:nullable",
+        "htmlType": "date",
+        "validations": "nullable",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "resetCount",
+        "dbType": "integer,false",
+        "htmlType": null,
+        "validations": "nullable|integer",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "logapp",
+        "dbType": "string,45:nullable",
+        "htmlType": "text",
+        "validations": "nullable|string|max:45",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "certificatecrt",
+        "dbType": "string,45:nullable",
+        "htmlType": "text",
+        "validations": "nullable|string|max:45",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "certificatekey",
+        "dbType": "string,45:nullable",
+        "htmlType": "text",
+        "validations": "nullable|string|max:45",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "certificatepfx",
+        "dbType": "string,45:nullable",
+        "htmlType": "text",
+        "validations": "nullable|string|max:45",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "localcertificatecrt",
+        "dbType": "string,45:nullable",
+        "htmlType": "text",
+        "validations": "nullable|string|max:45",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "localcertificatekey",
+        "dbType": "string,45:nullable",
+        "htmlType": "text",
+        "validations": "nullable|string|max:45",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "localcertificatepfx",
+        "dbType": "string,45:nullable",
+        "htmlType": "text",
+        "validations": "nullable|string|max:45",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "cf_user_id",
+        "dbType": "bigInteger,false",
+        "htmlType": null,
+        "validations": "nullable",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "user_joomla_id",
+        "dbType": "bigInteger,false",
+        "htmlType": null,
+        "validations": "nullable",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "created_at",
+        "dbType": "datetime:nullable",
+        "htmlType": "date",
+        "validations": "nullable",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "updated_at",
+        "dbType": "datetime:nullable",
+        "htmlType": "date",
+        "validations": "nullable",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "deleted_at",
+        "dbType": "datetime:nullable",
+        "htmlType": "date",
+        "validations": null,
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,Administrador,users_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,HtTicAsset,users_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,HtTicAssetsHistory,users_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,HtTicKnowledgeBase,users_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,HtTicProvider,users_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,HtTicRequestHistory,assigned_by_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,HtTicRequestHistory,users_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,HtTicRequestHistory,assigned_user_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,HtTicRequest,assigned_by_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,HtTicRequest,users_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,HtTicRequest,assigned_user_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,HtTicSatisfactionPoll,users_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,HtTicSatisfactionPoll,functionary_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,MantHistoryMinorEquipment,users_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,MantMinorEquipmentFuel,users_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,PcInvestmentTechnicalSheet,users_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,PcInvestmentTechnicalSheetsHistory,users_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,PcNoveltiesPaa,users_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,PcPaaCall,users_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,PcPaaModificationRequestEvaluation,users_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,PcPreviousStudy,users_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,PcPreviousStudy,boss_process_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,PcPreviousStudy,leader_process_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,PcPreviousStudy,subgerente_process_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,PcPreviousStudy,lawyer"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,PcProcessLeader,users_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,UsersHistory,users_id"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,WorkGroup,users_work_groups"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,Usuario,users_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,WorkHistory,users_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,WorkHistoriesConfigDocument,users_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,WorkHistoriesCpNews,users_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,WorkHistoriesCpPDocumentsNews,users_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,WorkHistoriesCpPNewsUser,users_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,WorkHistoriesCpPensionado,users_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,WorkHistoriesCpPensionadosH,users_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,WorkHistoriesDocument,users_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,WorkHistoriesDocumentsNews,users_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,WorkHistoriesDocumentsNewsUser,users_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,WorkHistoriesFamily,users_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,WorkHistoriesHistory,users_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,WorkHistoriesNovelty,users_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,WorkHistoriesP,users_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,WorkHistoriesPConfigDocument,users_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,WorkHistoriesPDocumentsNews,users_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,WorkHistoriesPDocumentsNewsUser,users_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,WorkHistoriesPFamily,users_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,WorkHistoriesPHistory,users_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,WorkHistoriesPSubDocNews,users_id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,WorkHistoriesPSubstituteH,users_id"
+    }
+]

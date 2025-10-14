@@ -1,0 +1,11 @@
+{
+    "name": "CitizenPoll",
+    "alias": "citizen_poll",
+    "description": "Encuesta percepción y satisfacción del usuario",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\CitizenPoll\\Providers\\CitizenPollServiceProvider"
+    ],
+    "files": []
+}

@@ -1,0 +1,11 @@
+{
+    "name": "NotificacionesIntraweb",
+    "alias": "notificacionesintraweb",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\NotificacionesIntraweb\\Providers\\NotificacionesIntrawebServiceProvider"
+    ],
+    "files": []
+}

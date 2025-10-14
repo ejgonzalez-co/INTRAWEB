@@ -1,0 +1,11 @@
+{
+    "name": "HelpTable",
+    "alias": "help_table",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\HelpTable\\Providers\\HelpTableServiceProvider"
+    ],
+    "files": []
+}

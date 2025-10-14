@@ -1,0 +1,22 @@
+/node_modules
+/public/hot
+/public/storage
+/public/.htaccess
+/storage/*.key
+/storage/tenant*
+/storage/logs
+/vendor
+/public/css/app.css
+.env
+.env.backup
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+/app/IntegracionGoogle/token_google.json
+/app/IntegracionGoogle/credenciales_api_google.json
+/public/js/app.js
+/public/assets/documents/Formatos/Formato de contingencia recibida.xlsx
+public/js/app.js
+/.vscode

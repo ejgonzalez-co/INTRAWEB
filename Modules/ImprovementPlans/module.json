@@ -1,0 +1,11 @@
+{
+    "name": "ImprovementPlans",
+    "alias": "improvementplans",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\ImprovementPlans\\Providers\\ImprovementPlansServiceProvider"
+    ],
+    "files": []
+}

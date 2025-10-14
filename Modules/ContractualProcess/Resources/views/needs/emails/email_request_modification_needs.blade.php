@@ -1,0 +1,25 @@
+@component('mail::layout')
+   {{-- Header --}}
+   @slot('header')
+      @component('mail::header', ['url' => config('app.url')])
+         <img style="width: 120px;float: left;" src="https://app.intraepa.gov.co/assets/img/logo_epa.png" alt="{{ config('app.name') }} Logo">
+         <h2 style="padding-right: 120px;">{{ config('app.name') }}</h2>
+      @endcomponent
+   @endslot
+   
+# Cordial saludo
+
+El líder de proceso {{ $data->name_process }} ha enviado una solicitud de modificación y/o adición. Por favor ingresar con usuario y contraseña para realizar la aprobación de la solicitud pertinente.
+
+   @component('mail::button', ['url' => config('app.url')])
+   Ingrese aquí.
+   @endcomponent
+
+
+   {{-- Footer --}}
+   @slot('footer')
+      @component('mail::footer')
+         Este correo es de tipo informativo y por lo tanto, le pedimos no responda a éste mensaje..
+      @endcomponent
+   @endslot
+@endcomponent

@@ -1,0 +1,11 @@
+/**
+     * Display the specified $MODEL_NAME$.
+     * GET|HEAD /$MODEL_NAME_PLURAL_CAMEL$/{id}
+     *
+     * @author Desarrollador Seven - 2022
+     * @version 1.0.0
+     *
+     * @param int $id
+     *
+     * @return Response
+     */

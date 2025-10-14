@@ -1,0 +1,22 @@
+<div class="table-responsive">
+    <table class="table table-hover m-b-0" id="$MODEL_NAME_PLURAL_CAMEL$-table">
+        <thead>
+            <tr>
+                <th>#</th>
+                $FIELD_HEADERS$
+                <th>@lang('crud.action')</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr v-for="($MODEL_NAME_CAMEL$, key) in advancedSearchFilterPaginate()" :key="key">
+                <td>@{{ getIndexItem(key) }}</td>
+                $FIELD_BODY$
+                <td>
+                    <button @click="edit($MODEL_NAME_CAMEL$.id)" data-backdrop="static" data-target="#modal-form-$MODEL_NAME_PLURAL_CAMEL$" data-toggle="modal" class="btn btn-white btn-icon btn-md" data-toggle="tooltip" data-placement="top" title="@lang('crud.edit')"><i class="fas fa-pencil-alt"></i></button>
+                    <button @click="show($MODEL_NAME_CAMEL$.id)" data-target="#modal-view-$MODEL_NAME_PLURAL_CAMEL$" data-toggle="modal" class="btn btn-white btn-icon btn-md" data-toggle="tooltip" data-placement="top" title="@lang('see_details')"><i class="fa fa-search"></i></button>
+                    <button @click="drop($MODEL_NAME_CAMEL$.id)" class="btn btn-white btn-icon btn-md" data-toggle="tooltip" data-placement="top" title="@lang('drop')"><i class="fa fa-trash"></i></button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,5 @@
+<div class="row">
+   <!-- $FIELD_NAME_TITLE$ Field -->
+   <dt class="text-inverse text-right col-3 text-truncate">@lang('$FIELD_NAME_TITLE$'):</dt>
+   <dd class="col-9 text-truncate">@{{ dataShow.$FIELD_NAME$ }}.</dd>
+</div>

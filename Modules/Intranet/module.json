@@ -1,0 +1,11 @@
+{
+    "name": "Intranet",
+    "alias": "intranet",
+    "description": "Modulo de intranet, gestion de cargos etc.",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Intranet\\Providers\\IntranetServiceProvider"
+    ],
+    "files": []
+}

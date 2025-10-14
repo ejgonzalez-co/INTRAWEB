@@ -1,0 +1,24 @@
+{
+   "typeDocumentaries":"Tipos documentales",
+   "seriesSubSeries":"Gestión de series y subseries documentales",
+   "inventoryDocumentals":"Inventario documental",
+   "dependencias":"Tablas de retención documental",
+   "text_title":"Administración de",
+   "dependenciasSerieSubseries":"Elaborar tabla de retención documental oficina productora",
+   "box.crud" : "Cuadro de",
+   "clasifiDocument":"clasificación documental",
+   "calificExcel":"clasificación excel",
+   "generateTrdExcel":"Generear TRD Excel",
+   "editDependencias":"Editar TRD",
+   "asignDependencias":"Seleccionar series y subseries",
+   "edit":"editar",
+   "deleteFromRegisterDocumental" : "Borrar Registro de Inventario Documental",
+   "oficineProduct":"oficina productora",
+   "indicate the": "Indique",
+   "add-meta-data" : "Metadatos para fortalecer la búsqueda de información sobre los documentos digitalizados",
+   "message-metadata" : "Agregar metadatos",
+   "criterios-busqueda" : "criterios de búsqueda",
+   "criterios-busquedas" : "Criterios de búsqueda"
+
+   
+}

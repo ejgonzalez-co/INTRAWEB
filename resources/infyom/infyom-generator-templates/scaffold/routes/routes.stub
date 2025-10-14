@@ -1,0 +1,8 @@
+// Ruta para la gestion de $MODEL_NAME_PLURAL_CAMEL$
+Route::resource('$MODEL_NAME_PLURAL_CAMEL$', '$PATH_PREFIX$$MODEL_NAME$Controller', ['only' => [
+    'index', 'store', 'update', 'destroy'
+]]);
+// Ruta que obtiene todos los registros de $MODEL_NAME_PLURAL_CAMEL$
+Route::get('get-$MODEL_NAME_PLURAL_CAMEL$', '$PATH_PREFIX$$MODEL_NAME$Controller@all')->name('all');
+// Ruta para exportar los datos de $MODEL_NAME_PLURAL_CAMEL$
+Route::post('export-$MODEL_NAME_PLURAL_CAMEL$', '$PATH_PREFIX$$MODEL_NAME$Controller@export')->name('export');

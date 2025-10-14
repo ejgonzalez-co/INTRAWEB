@@ -1,0 +1,11 @@
+{
+    "name": "DocumentosElectronicos",
+    "alias": "documentoselectronicos",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\DocumentosElectronicos\\Providers\\DocumentosElectronicosServiceProvider"
+    ],
+    "files": []
+}

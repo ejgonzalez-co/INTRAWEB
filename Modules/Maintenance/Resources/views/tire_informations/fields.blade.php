@@ -1,0 +1,1 @@
+<form-tire-information :data-form="dataForm" machinery="{!! $machinery ?? null !!}"></form-tire-information>

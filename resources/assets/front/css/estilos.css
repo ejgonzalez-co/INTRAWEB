@@ -1,0 +1,243 @@
+/***************
+Estilos globales
+****************/
+fieldset{
+   background: #f9f9f98f;
+   border: 1px solid rgba(0, 0, 0, 0.125);
+   border-radius: 5px;
+   padding: 1rem;
+}
+ 
+legend{
+   background: #8080803b;
+   border-radius: 2px;
+   font-size: 1rem;
+   font-weight: bold; 
+   margin-left: 0.5rem;
+   min-width: 40%;
+   padding: 0 0.1rem 0 0.1rem;
+   width: auto;
+}
+
+input.form-control, textarea.form-control, select.form-control{
+   background: #F7F7F8;
+   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
+ 
+}
+
+header{
+   width: 100%;
+   position: relative;
+   background-image: url(/img/barra-header.png), url(/img/fondo-header.jpg);
+   background-size: contain,contain;
+   background-repeat: no-repeat,repeat;
+   border-bottom: 5px solid #722265;
+   display: block;
+}
+
+.logoQuindio img{
+   height: 86px;
+   width: 200px;
+   margin: 0px 0px 0px 29px;
+}
+
+.logos{
+   margin: 9px 0px 11px 41px;
+}
+
+.logos img{
+   height: 55px;
+}
+
+.social{
+   border-left: 1px solid #efefef;
+   padding-left: 1.5rem;
+}
+
+.social-icono{
+   margin: 1px;
+}
+
+
+.social-icono img{
+   height: 22px;
+   width: 22px;;
+}
+
+/*
+.footer {
+   background: url(../img/fondo-footer.jpg);
+   background-size: contain;
+   background-attachment: fixed;
+   background-position: center bottom;
+   overflow: hidden;
+   position: relative;
+   padding:0;
+   height: 170px;
+}
+
+.footer:before {
+   content: "";
+   background:rgba(255, 255, 255, 0.9);
+   position: absolute;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+}
+
+.footer {
+   border-top: 2px #732265 solid;
+}
+.nit{
+   color:#732265;
+   font-size: 1.5rem;
+   font-weight: 200;
+   margin: 10px 0px 0px 30px;
+}
+.ubicacion>p{
+   margin: -42px 0px 0px 61px;
+   font-size: 0.9rem;
+}
+.iconosPie>i{
+   font-size: 1.8rem;
+}
+.ubicacion>i{    
+   margin: 16px 0px 0px 39px;
+}
+.telefono>p{
+   font-size: 0.9rem!important;
+   margin: -41px 0px 0px -77px;
+}
+.telefono>i{
+   margin: 16px 0px 0px -108px; 
+}
+.fax>p{
+   font-size: 0.9rem!important;
+   margin: -41px 0px 0px -157px;
+}
+.fax>i{
+   margin: 16px 0px 0px -195px; 
+}
+.texto-atencion{
+   text-align: -webkit-right;
+   font-size: 12.5px;
+   margin: -30px 33px 0px 0px;
+}*/
+
+/******************************
+EStilos del contenido principal
+*******************************/
+.contenido{
+   min-height: 500px;
+}
+
+
+/*********************
+Estilos de fontawesome
+**********************/
+.fa-2x, .fa-3x, .fa-5x, .fa-7x{
+   vertical-align: sub;
+}
+
+
+/*******************************
+Estilos de la tabla de registros
+********************************/
+.registros h5{
+   font-size: 1.1rem;
+}
+
+
+/*****************
+Estilos de botones
+******************/
+.btn-info {
+   margin-bottom: 0.5rem;
+}
+
+.btnPanel{
+   font-size: small;
+   font-weight: bold;
+   margin: 5px;
+   min-height: 9rem;
+   text-align: center;
+   width: 9rem;   
+}
+
+.btnPanel img{
+   width: 50px;
+   height: 50px;
+}
+
+.button_img{
+   padding: 1px 5px 1px 0px;
+}
+
+.btn-light {
+   border-color: #000000;
+}
+
+.btnAcciones{
+   border: none;
+}
+
+.btnAcciones:hover{
+   background-color: #b4b4b4;
+}
+
+
+.registros .btn-sm {
+   width: 2rem;
+   margin: 0.06rem;
+}
+
+
+/********************
+Estilos de las tablas
+*********************/
+.table-hover tbody tr:hover {
+   color: #212529;
+   background-color: rgba(105, 105, 105, 0.075);
+}
+
+.registros tbody td{
+   font-size: 0.9rem;
+}
+
+
+/************************
+Estilos del pie de página
+*************************/
+/*
+footer{
+   background-repeat: repeat-x!important;
+   background: url(https://ventanillaunicavirtualpijao.gov.co/images/imagenes/borde-footer-vuv-pijao.png) scroll;
+   margin: 20px auto 0;
+}
+
+.barra-politicas{
+   background: #005C32;
+   color: #FFFFFF;
+}
+
+.barra-politicas p{
+   padding: 5px;
+   text-align: right;
+}
+*/
+
+[v-cloak] > * {
+   display:none;
+}
+
+[v-cloak]:before {
+   content: '';
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   /* background: url(/img/loading.gif) center; */
+   background-repeat: no-repeat;
+   z-index: 10;
+   background-size: 10rem;
+}

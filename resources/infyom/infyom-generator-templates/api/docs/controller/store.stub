@@ -1,0 +1,11 @@
+/**
+     * Store a newly created $MODEL_NAME$ in storage.
+     * POST /$MODEL_NAME_PLURAL_CAMEL$
+     *
+     * @author Desarrollador Seven - 2022
+     * @version 1.0.0
+     *
+     * @param Create$MODEL_NAME$APIRequest $request
+     *
+     * @return Response
+     */

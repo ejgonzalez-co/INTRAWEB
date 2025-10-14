@@ -1,0 +1,1 @@
+<table-column show="$FIELD_NAME$" label="@lang('$FIELD_NAME_TITLE$')"></table-column>

@@ -1,0 +1,23 @@
+{
+    "name": "nwidart/improvementplans",
+    "description": "",
+    "authors": [
+        {
+            "name": "Desarrollador Seven Soluciones Informaticas",
+            "email": "soporte@seven.com.co"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\ImprovementPlans\\": ""
+        }
+    }
+}

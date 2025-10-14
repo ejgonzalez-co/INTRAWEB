@@ -1,0 +1,1 @@
+<p>Esta es la implementación de un componente de Laravel Blade cuyo nombre será x-message</p>
